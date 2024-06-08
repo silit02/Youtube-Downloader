@@ -4,7 +4,7 @@ from sys import argv
 #Überprüfung der Parameter
 if len(argv) < 2 or len(argv) > 3:
     print("usage:",argv[0],"<link> [path]")
-    exit()
+    exit(1)
 
 link = argv[1]
 yt = YouTube(link)
