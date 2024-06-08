@@ -1,5 +1,7 @@
 from pytube import YouTube
 from sys import argv
+import os
+from pathlib import Path
 
 #Überprüfung der Parameter
 if len(argv) < 2 or len(argv) > 3:
@@ -17,7 +19,8 @@ print("\tAufrufe:", yt.views)
 
 #Einstellungen für Download festlegen
 yd = yt.streams.get_highest_resolution()
-path = '/Users/simon/Downloads'
+home = str(Path.home())
+path = os.path.join(home, 'Downloads')
 if len(argv) > 2:
     path = argv[2]
 
