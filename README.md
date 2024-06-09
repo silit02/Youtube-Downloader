@@ -28,7 +28,7 @@ source venv/bin/activate
 
 3. Installation der Dependencies
 ```bash 
-pip3 install -r reqirements.txt
+pip3 install -r requirements.txt
 ```
 
 4. Packen der App
